@@ -1,1 +1,14 @@
 This tutorial is designed for software programmers, statisticians and data miners who are looking forward for developing statistical software using R programming. If you are trying to understand the R programming language as a beginner, this tutorial will give you enough understanding on almost all the concepts of the language from where you can take yourself to higher levels of expertise.
+ex.
+# Create data for the graph.
+x <- c(21, 62, 10, 53)
+labels <- c("London", "New York", "Singapore", "Mumbai")
+
+# Give the chart file a name.
+png(file = "city.png")
+
+# Plot the chart.
+pie(x,labels)
+
+# Save the file.
+dev.off()
